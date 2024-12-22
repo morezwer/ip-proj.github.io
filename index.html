@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Главная</title>
+    <!-- Подключение базовых стилей -->
+    <!-- base.css будет импортировать theme.css и layout.css -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+    <!-- 
+        Комментарии в HTML:
+        Ниже представлена шапка сайта с навигацией. 
+        Навигация "каждый с каждым" присутствует - ссылки на все три страницы.
+    -->
+
+    <header id="main-header">
+        <div class="logo-container">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Лого" id="site-logo"/></a>
+            <h1 id="site-title" class="header-text animate-fadein">Информационно-аналитический портал</h1>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О сайте</a></li>
+                <li><a href="data.html">Данные</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+        Основной контент страницы.
+        Используем grid для структуры, фон - градиент и/или изображение.
+        Здесь будут таблицы, списки и т.д.
+    -->
+
+    <main id="main-content">
+        <!-- 
+            Пример таблицы №1:
+            Таблица с некоторой статистикой.
+        -->
+        <section class="stat-section">
+            <h2>Статистика посещений</h2>
+            <table class="stat-table">
+                <caption>Посещения за последний месяц</caption>
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Посетители</th>
+                        <th>Просмотры страниц</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01.12</td>
+                        <td>120</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>02.12</td>
+                        <td>98</td>
+                        <td>280</td>
+                    </tr>
+                    <tr>
+                        <td>03.12</td>
+                        <td>150</td>
+                        <td>400</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Пример таблицы №2: -->
+        <section class="stat-section">
+            <h2>Параметры оборудования</h2>
+            <table class="equip-table">
+                <caption>Характеристики серверов</caption>
+                <thead>
+                    <tr>
+                        <th>Модель</th>
+                        <th>CPU</th>
+                        <th>RAM (GB)</th>
+                        <th>Накопитель (SSD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Server A</td>
+                        <td>8 ядер</td>
+                        <td>32</td>
+                        <td>500 GB</td>
+                    </tr>
+                    <tr>
+                        <td>Server B</td>
+                        <td>16 ядер</td>
+                        <td>64</td>
+                        <td>1 TB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Пример нумерованных и ненумерованных списков -->
+        <section>
+            <h2>Рекомендации и задачи</h2>
+            <!-- Нумерованный список -->
+            <ol class="tasks-list">
+                <li>Проверить обновления данных</li>
+                <li>Обновить систему мониторинга</li>
+                <li>Подготовить отчет за неделю</li>
+            </ol>
+
+            <!-- Ненумерованный список с разными маркерами -->
+            <ul class="bullet-list">
+                <li>Техническая поддержка &#9679;</li>
+                <li style="list-style-type:square;">Статистический анализ</li>
+                <li style="list-style-type:circle;">Отчеты и аналитика</li>
+            </ul>
+
+            <!-- Еще один нумерованный список с другим типом нумерации -->
+            <ol type="I" class="roman-list">
+                <li>Проведение аудита безопасности</li>
+                <li>Подготовка рекомендаций</li>
+            </ol>
+
+            <!-- Еще один ненумерованный список -->
+            <ul class="arrow-list" style="list-style-type:disc;">
+                <li>Обновление ПО</li>
+                <li>Резервное копирование</li>
+            </ul>
+        </section>
+
+        <!-- Пример списков определений -->
+        <section>
+            <h2>Термины</h2>
+            <dl>
+                <dt>Аналитика</dt>
+                <dd>Процесс получения инсайтов из данных.</dd>
+                <dt>Метаданные</dt>
+                <dd>Данные о данных, описывающие их свойства.</dd>
+            </dl>
+
+            <dl>
+                <dt>SEO</dt>
+                <dd>Оптимизация сайта для поисковых систем.</dd>
+                <dt>UI/UX</dt>
+                <dd>Взаимодействие пользователя с интерфейсом и опыт использования.</dd>
+            </dl>
+        </section>
+
+        <!-- Демонстрация элементов, на которые будет воздействовать JS -->
+        <section>
+            <h2>Динамические эффекты</h2>
+            <button id="change-color-btn">Изменить цвет заголовков</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Информационно-аналитический портал</p>
+    </footer>
+</body>
+</html>

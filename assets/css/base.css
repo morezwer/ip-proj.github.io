@@ -1,0 +1,87 @@
+/* base.css 
+   Основной файл, через @import подключаем другие стили.
+   Структура:
+   1. Импорт theme.css (цветовая схема)
+   2. Импорт layout.css (структура и позиционирование)
+*/
+
+@import url('theme.css');
+@import url('layout.css');
+
+/* Общие стили для тегов, пример оформления блочных и строчных элементов: */
+
+/* Пример rgb() для генерации собственных цветов */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(20,20,20);
+    background: linear-gradient(to bottom, rgb(200,230,255), rgb(180,200,240));
+    overflow-y: scroll; /* Прокрутка */
+}
+
+/* Стили для тегов */
+h1, h2, h3 {
+    text-transform: uppercase; /* 2D трансформации не к заголовку, а к другим элементам */
+    padding-left: 20px;
+}
+/* Стиль для параграфов */
+p {
+    padding-left: 20px;
+}
+
+/* Пример текстовых трансформаций и наведения */
+a {
+    color: rgb(0, 100, 200);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(100,0,200);
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Для списков */
+ul, ol, dl {
+    margin: 20px;
+}
+
+/* Тени и эффекты */
+.stat-table, .equip-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s;
+}
+
+/* Ячейки таблиц */
+.stat-table th, .stat-table td, .equip-table th, .equip-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Кнопка для JS динамики */
+#change-color-btn {
+    padding: 10px 20px;
+    background: rgb(50,150,50);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#change-color-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Тени, наведения, анимации (пример одного элемента) */
+.feature-item {
+    background: rgb(255,255,255);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.feature-item:hover {
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+}

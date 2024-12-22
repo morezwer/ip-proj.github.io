@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>О сайте</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+    <!-- 
+        Комментарии:
+        На этой странице будем использовать Grid или Flex для структуры.
+        Также здесь будут CSS анимации (не менее трех).
+    -->
+
+    <header id="main-header">
+        <div class="logo-container">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Лого" id="site-logo"/></a>
+            <h1 id="site-title" class="header-text animate-fadein">Информационно-аналитический портал</h1>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О сайте</a></li>
+                <li><a href="data.html">Данные</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-content">
+        <section class="about-info">
+            <h2 class="animate-fadein">О нашем портале</h2>
+            <p class="animate-slidein">Наш портал предоставляет свежие аналитические данные, статистику и отчеты для специалистов в области маркетинга, IT и бизнеса.</p>
+            <p class="animate-rotate">Мы стремимся обеспечить удобный доступ к ключевым метрикам и показателям эффективности.</p>
+        </section>
+
+        <!-- Применение Flexbox для одного из блоков -->
+        <section class="features-container">
+            <h2>Наши преимущества</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Надежность</h3>
+                    <p>Данные обновляются регулярно.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Точность</h3>
+                    <p>Соблюдаем стандарты верификации.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Визуализация</h3>
+                    <p>Понятные графики и диаграммы.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Информационно-аналитический портал</p>
+    </footer>
+</body>
+</html>
